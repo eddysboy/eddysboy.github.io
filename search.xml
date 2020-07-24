@@ -13,6 +13,29 @@
       </tags>
   </entry>
   <entry>
+    <title>2048小游戏</title>
+    <url>/20200724/2048%E5%B0%8F%E6%B8%B8%E6%88%8F/</url>
+    <content><![CDATA[<h3 id="A-simple-2048-game"><a href="#A-simple-2048-game" class="headerlink" title="A simple 2048 game"></a>A simple 2048 game</h3><p>无聊的时候编的…</p>
+<p>目前支持Mac和Windows，没有图形化界面。</p>
+<h3 id="编译-amp-运行"><a href="#编译-amp-运行" class="headerlink" title="编译&amp;运行"></a>编译&amp;运行</h3><p>首先运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/eddysboy/2048.git</span><br><span class="line"><span class="built_in">cd</span> 2048</span><br></pre></td></tr></table></figure>
+
+<p>接下来，如果你使用Windows，运行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gcc 2048_windows.cpp -o 2048.exe -std=c++11</span><br><span class="line">./2048.exe</span><br></pre></td></tr></table></figure>
+
+<p>如果使用Max&amp;Linux，则运行：</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">gcc <span class="number">2048</span>.cpp <span class="literal">-std</span>=c++<span class="number">11</span></span><br><span class="line">./<span class="number">2048</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
+      <tags>
+        <tag>2048</tag>
+        <tag>games</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Unturned常用ID</title>
     <url>/20200722/Unturned%E5%B8%B8%E7%94%A8ID/</url>
     <content><![CDATA[<h2 id="食物"><a href="#食物" class="headerlink" title="食物"></a>食物</h2><p>81 - MRE 【军粮】（+75饱食度 +75水分）</p>
