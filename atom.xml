@@ -46,15 +46,16 @@
     <link href="http://eddysboy.github.io/20200722/Hello%20world/"/>
     <id>http://eddysboy.github.io/20200722/Hello%20world/</id>
     <published>2020-07-22T14:41:06.000Z</published>
-    <updated>2020-07-23T09:16:56.306Z</updated>
+    <updated>2020-07-23T13:38:08.247Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>Hello , world !</strong> </p>]]></content>
+    <content type="html"><![CDATA[<p><strong>Hello , world !</strong> </p><p><a href="baidu.com">baidu!</a></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;&lt;strong&gt;Hello , world !&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;baidu.com&quot;&gt;baidu!&lt;/a&gt;&lt;/p&gt;
 
       
     
