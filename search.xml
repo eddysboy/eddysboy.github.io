@@ -19,20 +19,17 @@
 <p>目前支持Mac和Windows，没有图形化界面。</p>
 <h3 id="编译-amp-运行"><a href="#编译-amp-运行" class="headerlink" title="编译&amp;运行"></a>编译&amp;运行</h3><p>首先运行：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/eddysboy/2048.git</span><br><span class="line"><span class="built_in">cd</span> 2048</span><br></pre></td></tr></table></figure>
-
 <p>接下来，如果你使用Windows，运行：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gcc 2048_windows.cpp -o 2048.exe -std=c++11</span><br><span class="line">./2048.exe</span><br></pre></td></tr></table></figure>
-
 <p>如果使用Max&amp;Linux，则运行：</p>
 <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">gcc <span class="number">2048</span>.cpp <span class="literal">-std</span>=c++<span class="number">11</span></span><br><span class="line">./<span class="number">2048</span></span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>程序</category>
       </categories>
       <tags>
-        <tag>games</tag>
         <tag>2048</tag>
+        <tag>games</tag>
       </tags>
   </entry>
   <entry>
@@ -89,5 +86,22 @@
         <tag>games</tag>
         <tag>unturned</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>一个奇怪的问题</title>
+    <url>/20200726/%E4%B8%80%E4%B8%AA%E5%A5%87%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>如果定义一个函数:</p>
+<script type="math/tex; mode=display">
+f(x)=1+x+x^2+x^3+x^4+\dots</script><p>则可以得到:</p>
+<script type="math/tex; mode=display">
+x*f(x)+1=f(x)</script><p>解出来就是:</p>
+<script type="math/tex; mode=display">
+f(x)=\frac{1}{1-x}</script><p>当$x=\frac12$或$x=\frac34$时，f(x)分别等于2和4<br>而当$x=2$时，$f(x)=-1$，即：</p>
+<script type="math/tex; mode=display">
+f(x)=1+2+2^2+2^3+2^4+\dots=-1</script><p>这显然是不可能的，但推理的过程错在哪里呢？<del>我谔谔。</del></p>
+]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
   </entry>
 </search>

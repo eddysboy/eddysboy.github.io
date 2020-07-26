@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Eddysboy&#39;s Blog</title>
   
-  <subtitle>stane</subtitle>
+  <subtitle>某蒟蒻的小窝</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://eddysboy.github.io/"/>
-  <updated>2020-07-24T12:43:25.051Z</updated>
+  <updated>2020-07-26T12:26:16.381Z</updated>
   <id>http://eddysboy.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一个奇怪的问题</title>
+    <link href="http://eddysboy.github.io/20200726/%E4%B8%80%E4%B8%AA%E5%A5%87%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://eddysboy.github.io/20200726/%E4%B8%80%E4%B8%AA%E5%A5%87%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2020-07-26T11:13:29.000Z</published>
+    <updated>2020-07-26T12:26:16.381Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果定义一个函数:</p><script type="math/tex; mode=display">f(x)=1+x+x^2+x^3+x^4+\dots</script><p>则可以得到:</p><script type="math/tex; mode=display">x*f(x)+1=f(x)</script><p>解出来就是:</p><script type="math/tex; mode=display">f(x)=\frac{1}{1-x}</script><p>当$x=\frac12$或$x=\frac34$时，f(x)分别等于2和4<br>而当$x=2$时，$f(x)=-1$，即：</p><script type="math/tex; mode=display">f(x)=1+2+2^2+2^3+2^4+\dots=-1</script><p>这显然是不可能的，但推理的过程错在哪里呢？<del>我谔谔。</del></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;如果定义一个函数:&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+f(x)=1+x+x^2+x^3+x^4+\dots&lt;/script&gt;&lt;p&gt;则可以得到:&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=displa
+      
+    
+    </summary>
+    
+    
+      <category term="杂" scheme="http://eddysboy.github.io/categories/%E6%9D%82/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2048小游戏</title>
@@ -38,9 +65,9 @@
       <category term="程序" scheme="http://eddysboy.github.io/categories/%E7%A8%8B%E5%BA%8F/"/>
     
     
-      <category term="games" scheme="http://eddysboy.github.io/tags/games/"/>
-    
       <category term="2048" scheme="http://eddysboy.github.io/tags/2048/"/>
+    
+      <category term="games" scheme="http://eddysboy.github.io/tags/games/"/>
     
   </entry>
   
