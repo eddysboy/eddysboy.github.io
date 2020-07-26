@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Eddysboy&#39;s Blog</title>
   
-  <subtitle>某蒟蒻的小窝</subtitle>
+  <subtitle>某蒟蒻</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://eddysboy.github.io/"/>
