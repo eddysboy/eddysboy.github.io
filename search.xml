@@ -4,6 +4,7 @@
     <title>helloworld</title>
     <url>/20200722/Hello%20world/</url>
     <content><![CDATA[<p><strong>Hello , world !</strong> </p>
+<p><a href="https://baike.baidu.com/item/hello%20world/85501?fr=aladdin" target="_blank" rel="noopener"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3790635636,3629420152&amp;fm=26&amp;gp=0.jpg" alt=""></a></p>
 ]]></content>
       <categories>
         <category>博客搭建</category>
@@ -30,6 +31,50 @@
       <tags>
         <tag>2048</tag>
         <tag>games</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>abc174题解</title>
+    <url>/20200802/abc174%E9%A2%98%E8%A7%A3/</url>
+    <content><![CDATA[<p><strong>第一篇题解！</strong></p>
+<p><a href="https://atcoder.jp/contests/abc174" target="_blank" rel="noopener">比赛传送门</a></p>
+<h2 id="A-Air-Conditioner"><a href="#A-Air-Conditioner" class="headerlink" title="A - Air Conditioner"></a>A - Air Conditioner</h2><p><strong>题意</strong>：判断$X$是否大于等于$30$。</p>
+<p><strong>题解</strong>：非常简单的一道题。</p>
+<p><strong>时间复杂度</strong>：$O(1)$</p>
+<p><strong>空间复杂度</strong>：$O(1)$</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> x;</span><br><span class="line"> 	<span class="built_in">cin</span>&gt;&gt;x;</span><br><span class="line"> 	<span class="built_in">cout</span>&lt;&lt;(x&lt;<span class="number">30</span>?<span class="string">"No\n"</span>:<span class="string">"Yes\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="B-Distance"><a href="#B-Distance" class="headerlink" title="B - Distance"></a>B - Distance</h2><p><strong>题意</strong>：给出$N$个坐标$(p_i,q_i)$，输出到原点距离不大于$D$的坐标的个数。</p>
+<p><strong>题解</strong>：非常简单的一道题，即求$\sqrt{p_i^2+q_i^2}&lt;=D$的坐标的个数。</p>
+<p><strong>时间复杂度</strong>：$O(N)$</p>
+<p><strong>空间复杂度</strong>：$O(N)$</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="keyword">double</span> d;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;d;</span><br><span class="line">	<span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">double</span> x,y;</span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;x&gt;&gt;y;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">sqrt</span>(x*x+y*y)&lt;=d)ans++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="C-Repsept"><a href="#C-Repsept" class="headerlink" title="C - Repsept"></a>C - Repsept</h2><p><strong>题意</strong>：对于数列 $7,77,777,7777,77777,\dots$求其中第几个数是$K$的倍数（最小的）。</p>
+<p><strong>题解</strong>：从7开始判断每个数是否为$K$的倍数，如果由$n$个$7$组成的数模$K$余$x$，则由$n+1$个$7$组成的数模K余$10x+7$，可以证明$7$的个数不会大于$K$。</p>
+<p><strong>时间复杂度</strong>：$O(K)$</p>
+<p><strong>空间复杂度</strong>：$O(K)$</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> k;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;k;</span><br><span class="line">	<span class="keyword">int</span> cur=<span class="number">7</span>%k;</span><br><span class="line">	<span class="keyword">if</span>(cur==<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="number">1</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=k;i++)&#123;</span><br><span class="line">		cur=cur*<span class="number">10</span>%k+<span class="number">7</span>%k;</span><br><span class="line">		cur%=k;</span><br><span class="line">		<span class="keyword">if</span>(cur==<span class="number">0</span>)&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;i&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">"-1"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="D-Alter-Altar"><a href="#D-Alter-Altar" class="headerlink" title="D - Alter Altar"></a>D - Alter Altar</h2><p><strong>题意</strong>：有$N$块白色或红色的石头，可以在一次操作中交换任意两个石头或者将任意一个石头变成相反的颜色。现在要使红色的石头在白色的石头的左侧，求最少的操作数。</p>
+<p><strong>题解</strong>：枚举最终左侧红色石头的个数，然后用前缀和优化即可。</p>
+<p>​            注意左侧红色石头的个数最多为$pref_n$，如果没有红色要特判$0$。</p>
+<p><strong>时间复杂度</strong>：$O(N)$</p>
+<p><strong>空间复杂度</strong>：$O(N)$</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> s[<span class="number">200010</span>];</span><br><span class="line"><span class="keyword">int</span> pref[<span class="number">200010</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;(s+<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">int</span> ans=INF;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)pref[i]=pref[i<span class="number">-1</span>]+(<span class="keyword">int</span>)(s[i]==<span class="string">'R'</span>);</span><br><span class="line">	<span class="keyword">if</span>(pref[n]==<span class="number">0</span>)&#123;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="number">0</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=pref[n];i++)&#123;</span><br><span class="line">		ans=min(ans,i-pref[i]+pref[n]-pref[i]-(i-pref[i]));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="E-Logs"><a href="#E-Logs" class="headerlink" title="E - Logs"></a>E - Logs</h2><p><strong>题意</strong>：给出$n$块木头，每块木头的长度为$a_i$，我们最多可以锯$k$次木头，求在$k$次切割后最长的木头可能的最小值（答案取整数）。</p>
+<p><strong>题解</strong>：由于答案具有单调性，我们可以考虑二分。二分切割后最长的木头的最小值，check时让每块木头尽量切到目前二分的最小值，再看切割次数是否大于$k$。</p>
+<p><strong>时间复杂度</strong>：$O(N)$</p>
+<p><strong>空间复杂度</strong>：$O(N)$</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> int long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,k;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">200010</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">check</span><span class="params">(<span class="keyword">int</span> mid)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> cur=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[i]%mid==<span class="number">0</span>)cur+=a[i]/mid<span class="number">-1</span>;</span><br><span class="line">		<span class="keyword">else</span> cur+=a[i]/mid;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> cur&lt;=k;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">signed</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;k;</span><br><span class="line">	<span class="keyword">int</span> l=<span class="number">1</span>,r=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)<span class="built_in">cin</span>&gt;&gt;a[i],r=max(r,a[i]);</span><br><span class="line">	<span class="keyword">while</span>(l+<span class="number">1</span>&lt;r)&#123;</span><br><span class="line">		<span class="keyword">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(check(mid))r=mid;</span><br><span class="line">		<span class="keyword">else</span> l=mid+<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(check(l))<span class="built_in">cout</span>&lt;&lt;l&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;r&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="F-Range-Set-Query"><a href="#F-Range-Set-Query" class="headerlink" title="F - Range Set Query"></a>F - Range Set Query</h2><p><strong>题意</strong>：给出数列$a_1,a_2,\dots,a_n$和Q个询问。每个询问$l,r$查询从$a_l$到$a_r$出现的数的个数</p>
+<p><strong>解析</strong>：这道题的方法很多，线段树，树状数组，莫队都可以做。但树状数组写起来最简单。首先将询问以右端点从大到小排序，然后</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
+      <tags>
+        <tag>题解</tag>
+        <tag>Atcoder</tag>
+        <tag>ABC</tag>
       </tags>
   </entry>
   <entry>
@@ -86,22 +131,5 @@
         <tag>games</tag>
         <tag>unturned</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>一个奇怪的问题</title>
-    <url>/20200726/%E4%B8%80%E4%B8%AA%E5%A5%87%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>如果定义一个函数:</p>
-<script type="math/tex; mode=display">
-f(x)=1+x+x^2+x^3+x^4+\dots</script><p>则可以得到:</p>
-<script type="math/tex; mode=display">
-x*f(x)+1=f(x)</script><p>解出来就是:</p>
-<script type="math/tex; mode=display">
-f(x)=\frac{1}{1-x}</script><p>当$x=\frac12$或$x=\frac34$时，f(x)分别等于2和4<br>而当$x=2$时，$f(x)=-1$，即：</p>
-<script type="math/tex; mode=display">
-f(x)=1+2+2^2+2^3+2^4+\dots=-1</script><p>这显然是不可能的，但推理的过程错在哪里呢？<del>我谔谔。</del></p>
-]]></content>
-      <categories>
-        <category>杂</category>
-      </categories>
   </entry>
 </search>
